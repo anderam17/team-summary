@@ -151,7 +151,3 @@ function checkOutPut(){
 
 
 createManager();
-
-
-// Make ReadME
-//check that user actually entered something
