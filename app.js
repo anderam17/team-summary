@@ -35,12 +35,19 @@ while (!noMoreMembers){
     }
 }
 
+const teamHTML = render(teamMembers);
+
+fs.writeFileSync("team.html", teamHTML);
+
+
+
+
 //*empty array
 //* fill empty array with objects for each team member - HOW DO I GET THIS INFO
 //* Boolean operator - while no more team members is false, keep asking 
 //* when user hits "I don't want..." call the render function; pass array of objects
 //* ^ This will produce your HTML, Use it to create an HTML file named team.html in the output folder. Use output path to target this location.
-//* ^^ HINT check if output folder exists. If not, create it.
+//TODO ^^ HINT check if output folder exists. If not, create it.
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
