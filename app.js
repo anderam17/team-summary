@@ -21,18 +21,18 @@ function createManager(){
     inquirer.prompt([
         {
             type: "input",
-            message: "What is your Manager's name?",
+            message: "What is your manager's name?",
             name: "name"
 
         },
         {
             type: "number",
-            message: "What is your employee's ID?",
+            message: "What is your manager's ID?",
             name: "id"
         },
         {
             type: "input",
-            message: "What is your employee's email?",
+            message: "What is your manager's email?",
             name: "email"
         },
         {
@@ -55,23 +55,23 @@ function createEngineer(){
     inquirer.prompt([
         {
             type: "input",
-            message: "What is your employee's name?",
+            message: "What is your engineer's name?",
             name: "name"
 
         },
         {
             type: "number",
-            message: "What is your employee's ID?",
+            message: "What is your engineer's ID?",
             name: "id"
         },
         {
             type: "input",
-            message: "What is your employee's email?",
+            message: "What is your engineer's email?",
             name: "email"
         },
         {
             type: "input",
-            message: "What is your GitHub username?",
+            message: "What is your engineer's GitHub username?",
             name: "github"
         }
 
@@ -88,18 +88,18 @@ function createIntern(){
     inquirer.prompt([
         {
             type: "input",
-            message: "What is your employee's name?",
+            message: "What is your intern's name?",
             name: "name"
 
         },
         {
             type: "number",
-            message: "What is your employee's ID?",
+            message: "What is your intern's ID?",
             name: "id"
         },
         {
             type: "input",
-            message: "What is your employee's email?",
+            message: "What is your intern's email?",
             name: "email"
         },
         {
