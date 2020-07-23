@@ -153,9 +153,5 @@ function checkOutPut(){
 createManager();
 
 
-
-
-
 // Make ReadME
-//Add message to let user know they are entering info on a manager
 //check that user actually entered something
