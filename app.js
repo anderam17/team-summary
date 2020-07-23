@@ -10,14 +10,37 @@ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./lib/htmlRenderer");
 
-inquirer.prompt([
-    {
-        type: "list",
-        question: "Which type of team member would you like to add?",
-        name: "role",
-        choices: ["Engineer", "Intern", "I don't want to add any more team members"]
+//This array will hold each new team member object that is created and will be passed to the render function.
+const teamMembers = [];
+const noMoreMembers = false;
+
+const manager = new Manager(getName(), getId(), getEmail(), getOfficeNumber());
+teamMembers.push(manager);
+
+while (!noMoreMembers){
+    inquirer.prompt([
+        {
+            type: "list",
+            question: "Which type of team member would you like to add?",
+            name: "role",
+            choices: ["Engineer", "Intern", "I don't want to add any more team members"]
+        }
+    ]);
+    if(this.role === "Engineer"){
+        const engineer = new Engineer(getName(), getId(), getEmail(), getGitHub());
+    }else if(this.role === "Intern"){
+        const intern = new Intern(getName(), getId(), getEmail(), getSchool());
+    }else{
+        noMoreMembers = true;
     }
-]);
+}
+
+//*empty array
+//* fill empty array with objects for each team member - HOW DO I GET THIS INFO
+//* Boolean operator - while no more team members is false, keep asking 
+//* when user hits "I don't want..." call the render function; pass array of objects
+//* ^ This will produce your HTML, Use it to create an HTML file named team.html in the output folder. Use output path to target this location.
+//* ^^ HINT check if output folder exists. If not, create it.
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
